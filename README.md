@@ -73,9 +73,6 @@ php artisan serve
 ### Dashboard Admin
 ![Dashboard](screenshots/dashboard.png)
 
-### Kelola Kasir — Atur Akses Menu
-![Kelola Kasir](screenshots/kelola-kasir.png)
-
 <!-- Tambahkan screenshot lain di sini:
 ![Kasir POS](screenshots/kasir.png)
 ![Laporan Transaksi](screenshots/laporan-transaksi.png)
