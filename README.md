@@ -67,15 +67,20 @@ php artisan serve
 
 ## Screenshot
 
-> Screenshot akan ditambahkan di sini.
-
-<!-- 
+### Login
 ![Login](screenshots/login.png)
-![Dashboard Admin](screenshots/dashboard-admin.png)
+
+### Dashboard Admin
+![Dashboard](screenshots/dashboard.png)
+
+### Kelola Kasir — Atur Akses Menu
+![Kelola Kasir](screenshots/kelola-kasir.png)
+
+<!-- Tambahkan screenshot lain di sini:
 ![Kasir POS](screenshots/kasir.png)
 ![Laporan Transaksi](screenshots/laporan-transaksi.png)
-![Kelola Kasir](screenshots/kelola-kasir.png)
 ![QRIS Setting](screenshots/qris-setting.png)
+![Barang](screenshots/barang.png)
 -->
 
 ## Struktur Folder Penting
