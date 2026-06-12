@@ -26,7 +26,7 @@ class KasirApiController extends Controller
                     'kode' => $item->kode,
                     'nama' => $item->nama,
                     'harga' => $item->harga,
-                    'foto' => $item->foto ? asset('storage/' . $item->foto) : null,
+                    'foto' => $item->foto,
                     'kategori' => $item->category ? $item->category->nama : null,
                 ];
             })

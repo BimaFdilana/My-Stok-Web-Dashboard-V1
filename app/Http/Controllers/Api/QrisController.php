@@ -22,7 +22,7 @@ class QrisController extends Controller
             'success' => true,
             'data' => [
                 'id' => $qris->id,
-                'foto_url' => asset('storage/' . $qris->foto),
+                'foto' => $qris->foto,
                 'nama_merchant' => $qris->nama_merchant,
                 'keterangan' => $qris->keterangan,
             ]

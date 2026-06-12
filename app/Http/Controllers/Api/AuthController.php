@@ -57,11 +57,19 @@ class AuthController extends Controller
 
         $token = $user->createToken('auth_token')->plainTextToken;
 
+        $permissions = [];
+        if ($user->role === 'admin') {
+            $permissions = array_keys(\App\Http\Controllers\KasirManagementController::$menuOptions);
+        } else {
+            $permissions = $user->permissions()->pluck('menu_key')->toArray();
+        }
+
         return response()->json([
             'success' => true,
             'message' => 'Login berhasil',
             'user' => $user,
-            'token' => $token
+            'token' => $token,
+            'permissions' => $permissions,
         ]);
     }
 
