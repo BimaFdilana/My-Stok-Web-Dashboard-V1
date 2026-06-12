@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+
     <style>
         /* Base Reset & Background Setup */
         body {
@@ -22,7 +22,7 @@
             justify-content: center;
             align-items: center;
             overflow: hidden;
-            color: #1e293b; 
+            color: #1e293b;
             font-family: 'Poppins', sans-serif;
             -webkit-font-smoothing: antialiased;
         }
@@ -36,7 +36,7 @@
                     rgba(15, 23, 42, 0.25) 0%,   /* Slate gelap transparan tipis */
                     rgba(15, 23, 42, 0.75) 100%   /* Kontras gelap netral di bagian bawah */
                 );
-            backdrop-filter: blur(6px); 
+            backdrop-filter: blur(6px);
             -webkit-backdrop-filter: blur(6px);
             z-index: 1;
         }
@@ -46,13 +46,13 @@
             position: relative;
             z-index: 2;
             width: 100%;
-            max-width: 540px; 
+            max-width: 540px;
             padding: 50px 45px;
             margin: 20px;
-            background: #ffffff; 
+            background: #ffffff;
             border-radius: 32px;
-            border: 1px solid rgba(11, 59, 182, 0.12); 
-            box-shadow: 0 25px 55px rgba(15, 23, 42, 0.25); 
+            border: 1px solid rgba(11, 59, 182, 0.12);
+            box-shadow: 0 25px 55px rgba(15, 23, 42, 0.25);
             text-align: center;
             animation: cardEntrance 0.8s cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -85,7 +85,7 @@
         }
 
         /* --- STYLING TIPOGRAFI PREMIUM --- */
-        
+
         /* Judul Form Atas */
         .form-title {
             font-size: 26px;
@@ -120,7 +120,7 @@
         .sub-text-light {
             font-size: 14px;
             font-weight: 400;
-            color: #64748b; 
+            color: #64748b;
             line-height: 1.5;
             margin-bottom: 8px;
         }
@@ -128,8 +128,8 @@
         /* Teks Utama "BeansPoint solusinya!" */
         .main-brand-text {
             font-size: 28px;
-            font-weight: 800; 
-            color: #1e293b; 
+            font-weight: 800;
+            color: #1e293b;
             letter-spacing: -0.5px;
             margin: 12px 0;
             line-height: 1.2;
@@ -146,21 +146,21 @@
             font-weight: 400;
             color: #475569;
             line-height: 1.6;
-            max-width: 420px; 
+            max-width: 420px;
             margin: 10px auto 0 auto;
         }
 
         /* BUTTON GRADASI BIRU PREMIUM PRO */
         .btn-gradient-blue {
             display: inline-block;
-            background: linear-gradient(135deg, #0B3BB6 0%, #082980 100%); 
-            color: #ffffff !important; 
+            background: linear-gradient(135deg, #0B3BB6 0%, #082980 100%);
+            color: #ffffff !important;
             font-size: 13.5px;
             font-weight: 600;
             letter-spacing: 1px;
             text-transform: uppercase;
             padding: 15px 45px;
-            border-radius: 14px; 
+            border-radius: 14px;
             text-decoration: none;
             border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 10px 22px rgba(11, 59, 182, 0.35);
@@ -168,11 +168,11 @@
         }
 
         .btn-gradient-blue:hover {
-            background: linear-gradient(135deg, #164fe6 0%, #0B3BB6 100%); 
+            background: linear-gradient(135deg, #164fe6 0%, #0B3BB6 100%);
             transform: translateY(-2.5px);
             box-shadow: 0 14px 30px rgba(11, 59, 182, 0.5);
         }
-        
+
         .btn-gradient-blue:active {
             transform: translateY(-1px);
         }
@@ -183,7 +183,7 @@
 
     <!-- Card Container Utama -->
     <div class="white-compact-container">
-        
+
         <!-- Logo Section Terlindungi -->
         <div class="logo-wrapper">
             <img src="{{ asset('/img/logo4.png') }}" alt="My Stock Logo">
@@ -200,9 +200,9 @@
         </div>
 
         <!-- Button Gradasi Biru -->
-        <a href="{{ action([App\Http\Controllers\LoginRegisterController::class, 'showRegisterForm']) }}"
-           class="btn-gradient-blue">Ayo Daftar Sekarang !!</a>
-            
+        <a href="{{ url('/login') }}"
+           class="btn-gradient-blue">Masuk ke Aplikasi</a>
+
     </div>
 
     <!-- Bootstrap JS -->

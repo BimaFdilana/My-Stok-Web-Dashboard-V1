@@ -27,6 +27,14 @@ class Item extends Model
     }
 
     /**
+     * Relasi belongsTo ke Category via kategori_id.
+     */
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'kategori_id');
+    }
+
+    /**
      * Relasi one-to-many dengan transaksi melalui TransactionDetail.
      */
     public function transactions()

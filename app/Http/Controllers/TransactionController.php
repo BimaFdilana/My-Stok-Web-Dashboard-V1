@@ -175,6 +175,7 @@ class TransactionController extends Controller
             $transaction = Transaction::create([
                 'user_id' => auth()->id(),
                 'total' => $pendingTransaction['total'],
+                'payment_method' => $request->payment_method ?? 'cash',
                 'created_at' => Carbon::now('Asia/Jakarta'),
                 'updated_at' => Carbon::now('Asia/Jakarta')
             ]);
